@@ -32,7 +32,7 @@ int main() {                            //main
 
 
 
-    /*for (int i = 0; i < 5; i++) {             // scanf hodnod pro matice 
+    /*for (int i = 0; i < 5; i++) {             // scanf hodnot pro matice 
         for (int j = 0; j < 5; j++) {
             printf("napiste vasou matice: [%d][%d]: ", i, j);
             scanf("%d", &matrix1[i][j]);
@@ -42,7 +42,7 @@ int main() {                            //main
 
 
 
-    printf("\n");                         //printf prvni matice
+    printf("\n");                         //printf první matice
     printf("Vase prvni matice je: 5x5:\n");
     printf("\n");
     for (int i = 0; i < 5; i++) 
