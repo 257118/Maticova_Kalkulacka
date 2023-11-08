@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// int secteni()
+// int scitani()
 
 
 
@@ -32,7 +32,7 @@ int main() {                            //main
 
 
 
-    /*for (int i = 0; i < 5; i++) {                            // scanf hodnot pro matice
+    /*for (int i = 0; i < 5; i++) {             // scanf hodnod pro matice 
         for (int j = 0; j < 5; j++) {
             printf("napiste vasou matice: [%d][%d]: ", i, j);
             scanf("%d", &matrix1[i][j]);
@@ -42,7 +42,7 @@ int main() {                            //main
 
 
 
-    printf("\n");                         //printf první matice
+    printf("\n");                         //printf prvni matice
     printf("Vase prvni matice je: 5x5:\n");
     printf("\n");
     for (int i = 0; i < 5; i++) 
@@ -51,7 +51,14 @@ int main() {                            //main
         {
             if (j==0)
             {
-                printf("|%d ", matrix1[i][j]);
+                if (matrix1[i][j] < 10)
+                {
+                    printf("|%d  ", matrix1[i][j]);
+                }
+                else 
+                {
+                    printf("|%d ", matrix1[i][j]);
+                }
             }
             else if (j==4)
             {
@@ -59,9 +66,9 @@ int main() {                            //main
             }
             else if (matrix1[i][j] < 10)
             {
-                printf(" %d ", matrix1[i][j]);
+                printf("%d  ", matrix1[i][j]);
             }
-            else
+            else if (matrix1[i][j] >= 10)
             {
                 printf("%d ", matrix1[i][j]);
             }
@@ -71,7 +78,7 @@ int main() {                            //main
     
 
     printf("\n");                         //printf druhé matice
-    printf("Vase druha matice je: 5x5:\n");
+    printf("Vase druhe matice je: 5x5:\n");
     printf("\n");
     for (int i = 0; i < 5; i++) 
     {
@@ -79,7 +86,14 @@ int main() {                            //main
         {
             if (j==0)
             {
-                printf("|%d ", matrix2[i][j]);
+                if (matrix2[i][j] < 10)
+                {
+                    printf("|%d  ", matrix2[i][j]);
+                }
+                else 
+                {
+                    printf("|%d ", matrix2[i][j]);
+                }
             }
             else if (j==4)
             {
