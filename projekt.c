@@ -32,7 +32,7 @@ int main() {                            //main
 
 
 
-    /*for (int i = 0; i < 5; i++) {
+    /*for (int i = 0; i < 5; i++) {                            // scanf hodnot pro matice
         for (int j = 0; j < 5; j++) {
             printf("napiste vasou matice: [%d][%d]: ", i, j);
             scanf("%d", &matrix1[i][j]);
